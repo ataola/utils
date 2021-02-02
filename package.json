@@ -1,0 +1,23 @@
+{
+  "name": "@ataola/utils",
+  "version": "0.0.1",
+  "description": "ataola's utils: maybe publish a feature one week, to record something i think or meet.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ataola/utils.git"
+  },
+  "keywords": [
+    "javascript",
+    "utils"
+  ],
+  "author": "ataola (zjt613@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ataola/utils/issues"
+  },
+  "homepage": "https://github.com/ataola/utils#readme"
+}
