@@ -1,15 +1,27 @@
 language: node_js
+node_js: stable
 
-node_js:
-  - 15
-  - 12
-  - 10
+cache:
+  apt: true
+  directories:
+    - node_modules
 
-services:
-  - xvfb
+notifications:
+  email:
+    recipients:
+      - zjt613@gmail.com
+    on_success: change
+    on_failure: always
 
 addons:
   chrome: stable
+
+# turn off the clone of submodules for change the SSH to HTTPS in .gitmodules to avoid the error
+git:
+  submodules: false
+
+before_install:
+  - export TZ='Asia/Shanghai'
 
 install:
   - npm install
@@ -20,11 +32,8 @@ script:
 after_script:
   - npm run codecov
 
-cache:
-  npm: true
-
 branches:
   only:
-    - master
+    - main
 after_success:
   - bash <(curl -s https://codecov.io/bash)
