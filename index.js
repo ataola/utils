@@ -1,1 +1,3 @@
-console.log('init project');
+import * as cookies from './lib/cookies';
+
+export { cookies };
