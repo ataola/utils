@@ -26,6 +26,8 @@ if [[ $CURRENT_BRANCH = feature/* ]]; then
 elif [[ $CURRENT_BRANCH = main ]]; then
   e git stash
   e git push
+  e nrm use npm
   e npm publish --access public
+  e nrm use taobao
   e git stash pop || true
 fi
