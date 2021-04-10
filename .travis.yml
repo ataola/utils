@@ -13,15 +13,24 @@ notifications:
     on_success: change
     on_failure: always
 
+sudo: required
+dist: trusty
 addons:
   chrome: stable
 
+branches:
+  only:
+    - main
 # turn off the clone of submodules for change the SSH to HTTPS in .gitmodules to avoid the error
 git:
   submodules: false
 
 before_install:
-  - export TZ='Asia/Shanghai'
+  - 'export DISPLAY=:99.0'
+  - 'sh -e /etc/init.d/xvfb start'
+  - sleep 3 # give xvfb some time to start
+  - 'sudo chown root /opt/google/chrome/chrome-sandbox'
+  - 'sudo chmod 4755 /opt/google/chrome/chrome-sandbox'
 
 install:
   - npm install
@@ -32,8 +41,5 @@ script:
 after_script:
   - npm run codecov
 
-branches:
-  only:
-    - main
 after_success:
   - bash <(curl -s https://codecov.io/bash)
