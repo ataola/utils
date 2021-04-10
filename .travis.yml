@@ -1,0 +1,28 @@
+language: node_js
+
+node_js:
+  - 15
+  - 12
+  - 10
+
+services:
+  - xvfb
+
+addons:
+  chrome: stable
+
+install:
+  - npm install
+
+script:
+  - npm run karma:test
+
+after_script:
+  - npm run codecov
+
+cache:
+  npm: true
+
+branches:
+  only:
+    - master
