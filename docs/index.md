@@ -11,39 +11,14 @@ import { getVersion } from '@ataola/utils';
 console.log(getVersion());
 ```
 
-### Cookies
+### [cookies](./cookies.md)
 
-#### keys()
+- `keys()`
 
-```javascript
-import { cookies } from '@ataola/utils';
-const value = cookies.keys(); // []
-```
+- `getItem(key)`
 
-#### getItem(key)
+- `hasItem(key)`
 
-```javascript
-import { cookies } from '@ataola/utils';
-const value = cookies.getItem('name'); // null
-```
+- `removeItem(key, path, domain)`
 
-#### hasItem(key)
-
-```javascript
-import { cookies } from '@ataola/utils';
-const value = cookies.hasItem('name'); // false
-```
-
-#### removeItem(key, path, domain)
-
-```javascript
-import { cookies } from '@ataola/utils';
-const value = cookies.removeItem('name'); // false
-```
-
-#### setItem(key, value, end, path, domain, secure)
-
-```javascript
-import { cookies } from '@ataola/utils';
-const value = cookies.setItem('name', 'ataola'); // true
-```
+- `setItem(key, value, end, path, domain, secure)`

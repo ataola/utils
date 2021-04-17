@@ -1,4 +1,13 @@
 {
-  "presets": ["@babel/preset-env"],
-  "plugins": ["istanbul"]
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": [">0.25%", "not ie 11", "not op_mini all"]
+        }
+      }
+    ]
+  ],
+  "plugins": ["istanbul", "@babel/transform-runtime"]
 }

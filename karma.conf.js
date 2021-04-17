@@ -93,6 +93,7 @@ module.exports = function (config) {
     concurrency: Infinity,
     webpack: {
       mode: 'development',
+      entry: ['@babel/polyfill'],
       module: {
         rules: [
           {

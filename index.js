@@ -1,5 +1,6 @@
-import { version } from './package.json';
+import pkg from './package.json';
 import * as cookies from './lib/cookies';
+import * as judge from './lib/judge';
 
 /**
  *
@@ -7,7 +8,7 @@ import * as cookies from './lib/cookies';
  */
 
 function getVersion() {
-  return version;
+  return pkg.version;
 }
 
-export { cookies, getVersion };
+export { cookies, judge, getVersion };
