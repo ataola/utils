@@ -3,6 +3,12 @@
 ataola's utils: maybe publish a feature one week, to record something i think or meet.
 
 <p align="center">
+  <a href="LICENSE">
+    <img src="https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square" alt="Software License" />
+  </a>
+  <a href="https://www.npmjs.com/package/@ataola/utils">
+    <img src="https://img.shields.io/npm/v/@ataola/utils.svg?style=flat-square" alt="Packagist" />
+  </a>
   <a href="https://travis-ci.com/github/ataola/utils" target="_blank" rel="noopener noreferrer">
     <img alt="Travis CI" src="https://img.shields.io/travis/ataola/utils.svg">
   </a>

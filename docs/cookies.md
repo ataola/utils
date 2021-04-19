@@ -7,30 +7,30 @@ import { cookies } from '@ataola/utils';
 const value = cookies.keys(); // []
 ```
 
-## getItem(key)
+## get(key)
 
 ```javascript
 import { cookies } from '@ataola/utils';
-const value = cookies.getItem('name'); // null
+const value = cookies.get('name'); // null
 ```
 
-## hasItem(key)
+## has(key)
 
 ```javascript
 import { cookies } from '@ataola/utils';
-const value = cookies.hasItem('name'); // false
+const value = cookies.has('name'); // false
 ```
 
-## removeItem(key, path, domain)
+## remove(key, path, domain)
 
 ```javascript
 import { cookies } from '@ataola/utils';
-const value = cookies.removeItem('name'); // false
+const value = cookies.remove('name'); // false
 ```
 
-## setItem(key, value, end, path, domain, secure)
+## set(key, value, end, path, domain, secure)
 
 ```javascript
 import { cookies } from '@ataola/utils';
-const value = cookies.setItem('name', 'ataola'); // true
+const value = cookies.set('name', 'ataola'); // true
 ```
