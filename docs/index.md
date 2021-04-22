@@ -15,10 +15,10 @@ console.log(getVersion());
 
 - `keys()`
 
-- `getItem(key)`
+- `get(key)`
 
-- `hasItem(key)`
+- `has(key)`
 
-- `removeItem(key, path, domain)`
+- `removekey, path, domain)`
 
-- `setItem(key, value, end, path, domain, secure)`
+- `set(key, value, end, path, domain, secure)`

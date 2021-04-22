@@ -1,5 +1,14 @@
 import { expect } from 'chai';
-import { isNull, isNumber, isString, isSymbol, isUndefined, isBoolean, isBigInt, isFunction } from '../lib/judge';
+import {
+  isNull,
+  isNumber,
+  isString,
+  isSymbol,
+  isUndefined,
+  isBoolean,
+  isBigInt,
+  isFunction,
+} from '../lib/judge';
 
 describe('lib: judge test', function () {
   it('isNull: expect true when call function with params null', function () {

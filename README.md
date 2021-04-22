@@ -21,6 +21,10 @@ ataola's utils: maybe publish a feature one week, to record something i think or
 
 [site](https://zhengjiangtao.cn/utils)|[docs](./docs/index.md)
 
+## Modules
+
+![](img/qrcode-modules-feishu.png)
+
 ## Installation
 
 ```bash

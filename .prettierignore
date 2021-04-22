@@ -1,0 +1,6 @@
+# Ignore artifacts:
+coverage
+docs
+img
+# ignore dependency folder
+node_modules/
