@@ -7,7 +7,7 @@
           "browsers": [">0.25%", "not ie 11", "not op_mini all"]
         },
         "exclude": ["@babel/plugin-transform-async-to-generator", "@babel/plugin-transform-arrow-functions"],
-        "corejs": "3",
+        "corejs": { "version": "3.8", "proposals": true },
         "useBuiltIns": "usage"
       }
     ]
