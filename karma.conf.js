@@ -94,7 +94,8 @@ module.exports = function (config) {
     concurrency: Infinity,
     webpack: {
       mode: 'development',
-      entry: ['@babel/polyfill'],
+//       entry: ['@babel/polyfill'],
+      entry: ['./index.js'],
       module: {
         rules: [
           {
@@ -107,7 +108,7 @@ module.exports = function (config) {
               loader: 'babel-loader',
               // 传递给 babel-loader 的参数
               options: {
-                presets: ['@babel/preset-env'],
+                presets: ['@babel/preset-env', { 'useBuiltIns': 'usage' }],
                 plugins: ['istanbul']
               }
             }
