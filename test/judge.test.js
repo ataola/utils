@@ -61,4 +61,4 @@ describe('lib: judge test', function () {
 //     expect(isFunction(/helloworld/)).to.false;
 //     expect(isFunction(RegExp)).to.true;
 //   });
-// });
+});
