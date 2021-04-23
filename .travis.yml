@@ -1,10 +1,10 @@
 language: node_js
 node_js: stable
 
-cache:
-  apt: true
-  directories:
-    - node_modules
+#cache:
+#  apt: true
+#  directories:
+#    - node_modules
 
 notifications:
   email:
