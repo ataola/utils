@@ -15,7 +15,7 @@ module.exports = function (config) {
       'karma-mocha-reporter',
       'karma-chai',
       'karma-webpack',
-      'karma-coverage'
+      'karma-coverage',
     ],
 
     // list of files / patterns to load in the browser
@@ -27,10 +27,8 @@ module.exports = function (config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
-      // 匹配源文件，并使用 webpack 进行预处理
       'lib/**/*.js': ['webpack', 'coverage'],
-      // 匹配测试文件，并使用 webpack 进行预处理
-      'test/**/*.js': ['webpack']
+      'test/**/*.js': ['webpack'],
     },
 
     // test results reporter to use
@@ -44,27 +42,25 @@ module.exports = function (config) {
         success: 'blue',
         info: 'bgGreen',
         warning: 'cyan',
-        error: 'bgRed'
+        error: 'bgRed',
       },
       symbols: {
         success: '+',
         info: '#',
         warning: '!',
-        error: 'x'
+        error: 'x',
       },
       output: 'autowatch',
       showDiff: true,
-      divider: ''
+      divider: '',
     },
     coverageReporter: {
-      // 生成报告的目录
       dir: 'coverage/',
-      // 要生成的报告类型
       reporters: [
         { type: 'lcov', subdir: '.' },
         { type: 'text', subdir: '.', file: 'text.txt' },
-        { type: 'text-summary', subdir: '.', file: 'text-summary.txt' }
-      ]
+        { type: 'text-summary', subdir: '.', file: 'text-summary.txt' },
+      ],
     },
 
     // web server port
@@ -82,15 +78,14 @@ module.exports = function (config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    // browsers: ['Chrome', 'ChromeHeadless', 'ChromeHeadlessNoSandbox'],
-    browsers: ['ChromeHeadless', 'ChromeHeadlessNoSandbox'],
+    browsers: ['Chrome', 'ChromeHeadless', 'ChromeHeadlessNoSandbox'],
 
     // you can define custom flags
     customLaunchers: {
       ChromeHeadlessNoSandbox: {
         base: 'ChromeHeadless',
-        flags: ['--no-sandbox']
-      }
+        flags: ['--no-sandbox'],
+      },
     },
 
     // Continuous Integration mode
@@ -102,27 +97,31 @@ module.exports = function (config) {
     concurrency: Infinity,
     webpack: {
       mode: 'development',
-//       entry: ['@babel/polyfill'],
-//       entry: ['./index.js'],
+      //       entry: ['@babel/polyfill'],
+      //       entry: ['./index.js'],
       module: {
         rules: [
           {
-            // 匹配 JavaScript 文件
             test: /\.js$/,
-            // 排除 node_modules 目录
             exclude: /node_modules/,
             use: {
-              // 使用的 loader
               loader: 'babel-loader',
-              // 传递给 babel-loader 的参数
               options: {
-                presets: [['@babel/preset-env', { corejs: { version: '3.8', proposals: true }, 'useBuiltIns': 'usage' }]],
-                plugins: ['istanbul']
-              }
-            }
-          }
-        ]
-      }
-    }
+                presets: [
+                  [
+                    '@babel/preset-env',
+                    {
+                      corejs: { version: '3.8', proposals: true },
+                      useBuiltIns: 'usage',
+                    },
+                  ],
+                ],
+                plugins: ['istanbul'],
+              },
+            },
+          },
+        ],
+      },
+    },
   });
 };

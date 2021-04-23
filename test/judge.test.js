@@ -7,7 +7,7 @@ import {
   isUndefined,
   isBoolean,
   isBigInt,
-//   isFunction,
+  isFunction,
 } from '../lib/judge';
 
 describe('lib: judge test', function () {
@@ -51,14 +51,14 @@ describe('lib: judge test', function () {
     expect(isBigInt(2021)).to.false;
   });
 
-//   it('isFunction: expect true when call function with params in Function type', function () {
-// //     expect(isFunction(class superMan {})).to.true;
-// //     expect(isFunction(() => {})).to.true;
-// //     expect(isFunction(async () => {})).to.true;
-// //     expect(isFunction(function* superGirl() {})).to.true;
-//     expect(isFunction(Math.round)).to.true;
-//     // typeof /helloworld/ === 'object';
-//     expect(isFunction(/helloworld/)).to.false;
-//     expect(isFunction(RegExp)).to.true;
-//   });
+  it('isFunction: expect true when call function with params in Function type', function () {
+    expect(isFunction(class superMan {})).to.true;
+    expect(isFunction(() => {})).to.true;
+    expect(isFunction(async () => {})).to.true;
+    expect(isFunction(function* superGirl() {})).to.true;
+    expect(isFunction(Math.round)).to.true;
+    // typeof /helloworld/ === 'object';
+    expect(isFunction(/helloworld/)).to.false;
+    expect(isFunction(RegExp)).to.true;
+  });
 });
