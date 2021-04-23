@@ -12,7 +12,7 @@ describe('lib: element test', function () {
     expect(top).to.equal(8);
     expect(right).to.be.oneOf([1192, 792, 981]);
     expect(bottom).to.equal(8);
-    expect(width).to.be.oneOf([1184, 784]);
+    expect(width).to.be.oneOf([1184, 784, 973]);
     expect(height).to.equal(0);
   });
   it('getPosition', function () {
