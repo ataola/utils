@@ -10,5 +10,5 @@
       }
     ]
   ],
-  "plugins": ["istanbul", "@babel/transform-runtime", "@babel/plugin-transform-async-to-generator", "@babel/plugin-transform-arrow-functions"]
+  "plugins": ["istanbul", "@babel/transform-runtime", "@babel/plugin-transform-async-to-generator", "@babel/plugin-transform-arrow-functions", "@babel/plugin-proposal-class-properties"]
 }
