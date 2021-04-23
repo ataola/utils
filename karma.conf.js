@@ -102,7 +102,7 @@ module.exports = function (config) {
     webpack: {
       mode: 'development',
 //       entry: ['@babel/polyfill'],
-      entry: ['./index.js'],
+//       entry: ['./index.js'],
       module: {
         rules: [
           {
