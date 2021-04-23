@@ -10,9 +10,9 @@ describe('lib: element test', function () {
     expect(y).to.equal(8);
     expect(left).to.equal(8);
     expect(top).to.equal(8);
-    expect(right).to.be.oneOf([1192, 792, 981]);
+    expect(right).to.be.oneOf([1192, 792, 981, 777]);
     expect(bottom).to.equal(8);
-    expect(width).to.be.oneOf([1184, 784, 973]);
+    expect(width).to.be.oneOf([1184, 784, 973, 769]);
     expect(height).to.equal(0);
   });
   it('getPosition', function () {
