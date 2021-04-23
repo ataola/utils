@@ -116,7 +116,7 @@ module.exports = function (config) {
               loader: 'babel-loader',
               // 传递给 babel-loader 的参数
               options: {
-                presets: [['@babel/preset-env', { 'useBuiltIns': 'usage' }]],
+                presets: [['@babel/preset-env', { corejs: { version: '3.8', proposals: true }, 'useBuiltIns': 'usage' }]],
                 plugins: ['istanbul']
               }
             }
