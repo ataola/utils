@@ -7,8 +7,8 @@
     "push": "./push",
     "pull": "./pull",
     "codecov": "codecov",
-    "karma:test": "karma start ./karma.conf.js",
-    "karma:init": "karma init ./karma.conf.js"
+    "karma:init": "karma init ./karma.conf.js",
+    "karma:test": "karma start ./karma.conf.js"
   },
   "repository": {
     "type": "git",

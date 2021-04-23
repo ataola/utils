@@ -19,17 +19,25 @@ module.exports = function (config) {
     ],
 
     // list of files / patterns to load in the browser
+    // test all
     files: ['lib/**/*.js', 'test/**/*.js'],
+    // test single file
+    // files: ['test/**/element.test.js'],
 
     // list of files / patterns to exclude
     exclude: [],
 
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
+    // test all
     preprocessors: {
       'lib/**/*.js': ['webpack', 'coverage'],
       'test/**/*.js': ['webpack'],
     },
+    // test single file
+    // preprocessors: {
+    //   'test/**/element.test.js': ['webpack'],
+    // },
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
