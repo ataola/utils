@@ -22,7 +22,7 @@ module.exports = function (config) {
     // test all
     files: ['lib/**/*.js', 'test/**/*.js'],
     // test single file
-    // files: ['test/**/element.test.js'],
+    // files: ['test/**/judge.test.js'],
 
     // list of files / patterns to exclude
     exclude: [],
@@ -36,13 +36,13 @@ module.exports = function (config) {
     },
     // test single file
     // preprocessors: {
-    //   'test/**/element.test.js': ['webpack'],
+    //   'test/**/judge.test.js': ['webpack'],
     // },
 
     // test results reporter to use
     // possible values: 'dots', 'progress'
     // available reporters: https://npmjs.org/browse/keyword/karma-reporter
-    // reporters: ['progress'],
+    reporters: ['progress'],
     // https://github.com/litixsoft/karma-mocha-reporter
     reporters: ['mocha', 'coverage'],
     mochaReporter: {

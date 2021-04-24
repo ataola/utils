@@ -19,6 +19,76 @@ console.log(getVersion());
 
 - `has(key)`
 
-- `removekey, path, domain)`
+- `remove(key, path, domain)`
 
 - `set(key, value, end, path, domain, secure)`
+
+### [element](./element.md)
+
+- `getDOMRect(element)`
+
+- `getPosition(element)`
+
+### [generator](./generator.md)
+
+- `randomSimple()`
+
+### [judge](./judge.md)
+
+- `isNull(value)`
+
+- `isString(value)`
+
+- `isNumber(value)`
+
+- `isSymbol(value)`
+
+- `isUndefined(value)`
+
+- `isBoolean(value)`
+
+- `isBigInt(value)`
+
+- `isFunction(value)`
+
+- `isArray(value)`
+
+- `isObject(value)`
+
+- `isPrototype(value)`
+
+- `isMap(value)`
+
+- `isWeakMap(value)`
+
+- `isSet(value)`
+
+- `isWeakSet(value)`
+
+- `isError(value)`
+
+- `isScreenXS()`
+
+- `isScreenSM()`
+
+- `isScreenMD()`
+
+- `isScreenLG()`
+
+- `isScreenXL()`
+
+- `isEmpty(value)`
+
+- `isDate(value)`
+
+### [logger](./logger.md)
+
+- `timeConsumingSync(fn, ...args)`
+
+### [url](./url.md)
+
+- `getQueryParameters(url)`
+
+- `getQueryParametersByRegExp(url)`
+
+- `getQueryParameterByRegExp(url, name)`

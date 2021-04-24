@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">16.67% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>6/6</span>
+                <span class='fraction'>1/6</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">73.33% </span>
+                <span class="strong">13.33% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>11/15</span>
+                <span class='fraction'>2/15</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">50% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>2/2</span>
+                <span class='fraction'>1/2</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">16.67% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>6/6</span>
+                <span class='fraction'>1/6</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line low'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -100,7 +100,7 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">3x</span>
+<span class="cline-any cline-yes">5x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -111,17 +111,17 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -144,18 +144,18 @@ function getDOMRect(element) {
  * @param {element} element
  * @returns {object} {x, y}
  */
-function getPosition(element) {
-  const { left, top } = getDOMRect(element);
-  let dom = document.documentElement || <span class="branch-1 cbranch-no" title="branch not covered" >document.body.parentNode;</span>
+function <span class="fstat-no" title="function not covered" >getPosition(</span>element) {
+  const { left, top } = <span class="cstat-no" title="statement not covered" >getDOMRect(element);</span>
+  let dom = <span class="cstat-no" title="statement not covered" >document.documentElement || document.body.parentNode;</span>
   const x =
-    window.pageXOffset ||
+<span class="cstat-no" title="statement not covered" >    window.pageXOffset ||</span>
     window.scrollX ||
-    (typeof dom.scrollLeft == 'number' ? dom : <span class="branch-1 cbranch-no" title="branch not covered" >document.body)</span>.scrollLeft;
+    (typeof dom.scrollLeft == 'number' ? dom : document.body).scrollLeft;
   const y =
-    window.pageYOffset ||
+<span class="cstat-no" title="statement not covered" >    window.pageYOffset ||</span>
     window.scrollY ||
-    (typeof dom.scrollTop == 'number' ? dom : <span class="branch-1 cbranch-no" title="branch not covered" >document.body)</span>.scrollTop;
-  return { x: x + left, y: y + top };
+    (typeof dom.scrollTop == 'number' ? dom : document.body).scrollTop;
+<span class="cstat-no" title="statement not covered" >  return { x: x + left, y: y + top };</span>
 }
 &nbsp;
 export { getDOMRect, getPosition };
@@ -166,7 +166,7 @@ export { getDOMRect, getPosition };
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Fri Apr 23 2021 23:58:46 GMT+0800 (中国标准时间)
+                at Sat Apr 24 2021 21:30:04 GMT+0800 (中国标准时间)
             </div>
         </div>
         <script src="prettify.js"></script>
