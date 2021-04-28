@@ -7,8 +7,14 @@
     "push": "./push",
     "pull": "./pull",
     "codecov": "codecov",
+    "eslint": "eslint . --ext .js --fix",
+    "husky:prepare": "husky install",
+    "husky:add": "husky add .husky/pre-commit 'lint-staged'",
+    "git:add": "git add -A",
+    "lint": "lint-staged",
     "karma:init": "karma init ./karma.conf.js",
-    "karma:test": "karma start ./karma.conf.js"
+    "karma:test": "karma start ./karma.conf.js",
+    "format": "prettier --write '**/*.{js,jsx,ts,tsx,json,md}'"
   },
   "repository": {
     "type": "git",
@@ -62,9 +68,9 @@
     }
   },
   "lint-staged": {
-    "lib/**/*.{js}": [
-      "eslint --fix",
-      "git add"
+    "*.{js,ts,jsx,tsx}": [
+      "eslint . --fix",
+      "prettier --config .prettierrc --write ."
     ]
   }
 }

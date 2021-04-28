@@ -1,13 +1,25 @@
 # This file is for unifying the coding style for different editors and IDEs
 # editorconfig.org
 
+# top-most EditorConfig file
 root = true
 
+# Unix-style newlines with a newline ending every file
 [*]
-charset = utf-8
 end_of_line = lf
-indent_size = 2
+insert_final_newline = true
+
+# Denotes whether to trim whitespace at the end of lines
+trim_trailing_whitespace = true
+
+# Matches multiple files with brace expansion notation
+[*.{js}]
+charset = utf-8
 quote_type = single
 indent_style = space
-insert_final_newline = true
-trim_trailing_whitespace = true
+indent_size = 2
+
+[{package.json,.travis.yml}]
+indent_style = space
+indent_size = 2
+

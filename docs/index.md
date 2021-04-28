@@ -83,7 +83,7 @@ console.log(getVersion());
 
 ### [logger](./logger.md)
 
-- `timeConsumingSync(fn, ...args)`
+- `timing(name, cb)`
 
 ### [url](./url.md)
 

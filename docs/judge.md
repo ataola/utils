@@ -3,165 +3,165 @@
 ### `isNull(value)`
 
 ```javascript
-import { isNull } from '@ataola/utils';
-console.log(isNull(null)) // true
+import { judge } from '@ataola/utils';
+console.log(judge.isNull(null)) // true
 ```
 
 ### `isString(value)`
 
 ```javascript
-import { isString } from '@ataola/utils';
-console.log(isString('peace world')) // true
+import { judge } from '@ataola/utils';
+console.log(judge.isString('peace world')) // true
 ```
 
 ### `isNumber(value)`
 
 ```javascript
-import { isNumber } from '@ataola/utils';
-console.log(isNumber(2020)) // true
+import { judge } from '@ataola/utils';
+console.log(judge.isNumber(2020)) // true
 ```
 
 ### `isSymbol(value)`
 
 ```javascript
-import { isSymbol } from '@ataola/utils';
+import { judge } from '@ataola/utils';
 const foo = Symbol('foo');
-console.log(isSymbol(foo)) // true
+console.log(judge.isSymbol(foo)) // true
 ```
 
 ### `isUndefined(value)`
 
 ```javascript
-import { isUndefined } from '@ataola/utils';
-console.log(isUndefined(undefined)) // true
+import { judge } from '@ataola/utils';
+console.log(judge.sUndefined(undefined)) // true
 ```
 
 ### `isBoolean(value)`
 
 ```javascript
-import { isBoolean } from '@ataola/utils';
-console.log(isBoolean(true)) // true
+import { judge } from '@ataola/utils';
+console.log(judge.isBoolean(true)) // true
 ```
 
 ### `isBigInt(value)`
 
 ```javascript
-import { isBigInt } from '@ataola/utils';
-console.log(isBigInt(2020n)) // true
+import { judge } from '@ataola/utils';
+console.log(judge.isBigInt(2020n)) // true
 ```
 
 ### `isFunction(value)`
 
 ```javascript
-import { isFunction } from '@ataola/utils';
-console.log(isFunction(() => {}))) // true
+import { judge } from '@ataola/utils';
+console.log(judge.isFunction(() => {}))) // true
 ```
 
 ### `isArray(value)`
 
 ```javascript
-import { isArray } from '@ataola/utils';
-console.log(isArray([])) // true
+import { judge } from '@ataola/utils';
+console.log(judge.isArray([])) // true
 ```
 
 ### `isObject(value)`
 
 ```javascript
-import { isObject } from '@ataola/utils';
-console.log(isObject({})) // true
+import { judge } from '@ataola/utils';
+console.log(judge.isObject({})) // true
 ```
 
 ### `isPrototype(value)`
 
 ```javascript
-import { isPrototype } from '@ataola/utils';
-console.log(isPrototype(Date.prototype)) // true
+import { judge } from '@ataola/utils';
+console.log(judge.isPrototype(Date.prototype)) // true
 ```
 
 ### `isMap(value)`
 
 ```javascript
-import { isMap } from '@ataola/utils';
+import { judge } from '@ataola/utils';
 const map = new Map();
-console.log(isMap(map)) // true
+console.log(judge.isMap(map)) // true
 ```
 
 ### `isWeakMap(value)`
 
 ```javascript
-import { isWeakMap } from '@ataola/utils';
+import { judge } from '@ataola/utils';
 const weakMap = new WeakMap();
-console.log(isWeakMap(weakMap)) // true
+console.log(judge.isWeakMap(weakMap)) // true
 ```
 
 ### `isSet(value)`
 
 ```javascript
-import { isSet } from '@ataola/utils';
+import { judge } from '@ataola/utils';
 const set = new Set();
-console.log(isSet(set)) // true
+console.log(judge.isSet(set)) // true
 ```
 
 ### `isWeakSet(value)`
 
 ```javascript
-import { isWeakSet } from '@ataola/utils';
+import { judge } from '@ataola/utils';
 const weakSet = new WeakSet();
-console.log(isWeakSet(weakSet)) // true
+console.log(judge.isWeakSet(weakSet)) // true
 ```
 
 ### `isError(value)`
 
 ```javascript
-import { isError } from '@ataola/utils';
-console.log(isError(new Error())) // true
+import { judge } from '@ataola/utils';
+console.log(judge.isError(new Error())) // true
 ```
 
 ### `isScreenXS`
 
 ```javascript
-import { isScreenXS } from '@ataola/utils';
-console.log(isScreenXS()) // false
+import { judge } from '@ataola/utils';
+console.log(judge.isScreenXS()) // false
 ```
 
 ### `isScreenSM()`
 
 ```javascript
-import { isScreenSM } from '@ataola/utils';
-console.log(isScreenSM()) // true
+import { judge } from '@ataola/utils';
+console.log(judge.isScreenSM()) // true
 ```
 
 ### `isScreenMD()`
 
 ```javascript
-import { isScreenMD } from '@ataola/utils';
-console.log(isScreenMD()) // true
+import { judge } from '@ataola/utils';
+console.log(judge.isScreenMD()) // true
 ```
 
 ### `isScreenLG()`
 
 ```javascript
-import { isScreenLG } from '@ataola/utils';
-console.log(isScreenLG()) // true
+import { judge } from '@ataola/utils';
+console.log(judge.isScreenLG()) // true
 ```
 
 ### `isScreenXL()`
 
 ```javascript
-import { isScreenXL } from '@ataola/utils';
-console.log(isScreenXL()) // true
+import { judge } from '@ataola/utils';
+console.log(judge.isScreenXL()) // true
 ```
 
 ### `isEmpty(value)`
 
 ```javascript
-import { isEmpty } from '@ataola/utils';
-console.log(isEmpty(null)) // true
+import { judge } from '@ataola/utils';
+console.log(judge.isEmpty(null)) // true
 ```
 
 ### `isDate(value)`
 
 ```javascript
-import { isDate } from '@ataola/utils';
-console.log(isDate(Date.now())) // true
+import { judge } from '@ataola/utils';
+console.log(judge.isDate(Date.now())) // true
 ```

@@ -1,17 +1,17 @@
 # logger
 
-## timeConsumingSync(fn, ...args)
+## timing(name, cb)
 
 ```javascript
-import { timeConsumingSync } from '@ataola/utils';
+import { logger } from '@ataola/utils';
 
-function makeBaby(n) {
-  for (let i = 0; i < n; i++) {
+function makeBaby() {
+  for (let i = 0; i < 20; i++) {
     console.log(`the ${i}th baby was born.\n`)
   }
 }
 
-timeConsumingSync(makeBaby, 20);
+logger.timing('test', makeBaby);
 
 // the 0th baby was born.
 
@@ -53,5 +53,5 @@ timeConsumingSync(makeBaby, 20);
 
 // the 19th baby was born.
 
-// e28gc1ud0m8-time-cost: 1.174072265625 ms
+// time: 1.174072265625 ms
 ```
