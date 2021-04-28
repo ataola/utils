@@ -9,7 +9,7 @@
     "codecov": "codecov",
     "eslint": "eslint . --ext .js --fix",
     "husky:prepare": "husky install",
-    "husky:add": "husky add .husky/pre-commit 'lint-staged'",
+    "husky:add": "husky add .husky/pre-commit 'npm run lint'",
     "git:add": "git add -A",
     "lint": "lint-staged",
     "karma:init": "karma init ./karma.conf.js",
