@@ -1,27 +1,27 @@
 #  judge
 
-### `isNull(value)`
+### isNull(value)
 
 ```javascript
 import { judge } from '@ataola/utils';
 console.log(judge.isNull(null)) // true
 ```
 
-### `isString(value)`
+### isString(value)
 
 ```javascript
 import { judge } from '@ataola/utils';
 console.log(judge.isString('peace world')) // true
 ```
 
-### `isNumber(value)`
+### isNumber(value)
 
 ```javascript
 import { judge } from '@ataola/utils';
 console.log(judge.isNumber(2020)) // true
 ```
 
-### `isSymbol(value)`
+### isSymbol(value)
 
 ```javascript
 import { judge } from '@ataola/utils';
@@ -29,56 +29,56 @@ const foo = Symbol('foo');
 console.log(judge.isSymbol(foo)) // true
 ```
 
-### `isUndefined(value)`
+### isUndefined(value)
 
 ```javascript
 import { judge } from '@ataola/utils';
 console.log(judge.sUndefined(undefined)) // true
 ```
 
-### `isBoolean(value)`
+### isBoolean(value)
 
 ```javascript
 import { judge } from '@ataola/utils';
 console.log(judge.isBoolean(true)) // true
 ```
 
-### `isBigInt(value)`
+### isBigInt(value)
 
 ```javascript
 import { judge } from '@ataola/utils';
 console.log(judge.isBigInt(2020n)) // true
 ```
 
-### `isFunction(value)`
+### isFunction(value)
 
 ```javascript
 import { judge } from '@ataola/utils';
 console.log(judge.isFunction(() => {}))) // true
 ```
 
-### `isArray(value)`
+### isArray(value)
 
 ```javascript
 import { judge } from '@ataola/utils';
 console.log(judge.isArray([])) // true
 ```
 
-### `isObject(value)`
+### isObject(value)
 
 ```javascript
 import { judge } from '@ataola/utils';
 console.log(judge.isObject({})) // true
 ```
 
-### `isPrototype(value)`
+### isPrototype(value)
 
 ```javascript
 import { judge } from '@ataola/utils';
 console.log(judge.isPrototype(Date.prototype)) // true
 ```
 
-### `isMap(value)`
+### isMap(value)
 
 ```javascript
 import { judge } from '@ataola/utils';
@@ -86,7 +86,7 @@ const map = new Map();
 console.log(judge.isMap(map)) // true
 ```
 
-### `isWeakMap(value)`
+### isWeakMap(value)
 
 ```javascript
 import { judge } from '@ataola/utils';
@@ -94,7 +94,7 @@ const weakMap = new WeakMap();
 console.log(judge.isWeakMap(weakMap)) // true
 ```
 
-### `isSet(value)`
+### isSet(value)
 
 ```javascript
 import { judge } from '@ataola/utils';
@@ -102,7 +102,7 @@ const set = new Set();
 console.log(judge.isSet(set)) // true
 ```
 
-### `isWeakSet(value)`
+### isWeakSet(value)
 
 ```javascript
 import { judge } from '@ataola/utils';
@@ -110,56 +110,56 @@ const weakSet = new WeakSet();
 console.log(judge.isWeakSet(weakSet)) // true
 ```
 
-### `isError(value)`
+### isError(value)
 
 ```javascript
 import { judge } from '@ataola/utils';
 console.log(judge.isError(new Error())) // true
 ```
 
-### `isScreenXS`
+### isScreenXS
 
 ```javascript
 import { judge } from '@ataola/utils';
 console.log(judge.isScreenXS()) // false
 ```
 
-### `isScreenSM()`
+### isScreenSM()
 
 ```javascript
 import { judge } from '@ataola/utils';
 console.log(judge.isScreenSM()) // true
 ```
 
-### `isScreenMD()`
+### isScreenMD()
 
 ```javascript
 import { judge } from '@ataola/utils';
 console.log(judge.isScreenMD()) // true
 ```
 
-### `isScreenLG()`
+### isScreenLG()
 
 ```javascript
 import { judge } from '@ataola/utils';
 console.log(judge.isScreenLG()) // true
 ```
 
-### `isScreenXL()`
+### isScreenXL()
 
 ```javascript
 import { judge } from '@ataola/utils';
 console.log(judge.isScreenXL()) // true
 ```
 
-### `isEmpty(value)`
+### isEmpty(value)
 
 ```javascript
 import { judge } from '@ataola/utils';
 console.log(judge.isEmpty(null)) // true
 ```
 
-### `isDate(value)`
+### isDate(value)
 
 ```javascript
 import { judge } from '@ataola/utils';
