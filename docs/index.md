@@ -85,6 +85,8 @@ console.log(getVersion());
 
 - `timing(name, cb)`
 
+- `timeConsuming(cb)`
+
 ### [url](./url.md)
 
 - `getQueryParameters(url)`
@@ -92,3 +94,7 @@ console.log(getVersion());
 - `getQueryParametersByRegExp(url)`
 
 - `getQueryParameterByRegExp(url, name)`
+
+### [data](./data.md)
+
+- `deepFreeze(obj)`
