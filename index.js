@@ -1,4 +1,4 @@
-import pkg from './package.json';
+import { version } from './package.json';
 import * as cookies from './lib/cookies';
 import * as judge from './lib/judge';
 import * as element from './lib/element';
@@ -11,7 +11,7 @@ import * as url from './lib/url';
  */
 
 function getVersion() {
-  return pkg.version;
+  return version;
 }
 
 export { cookies, judge, element, generator, logger, url, getVersion };

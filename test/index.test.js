@@ -1,9 +1,9 @@
 import { expect } from 'chai';
 import { getVersion } from '../index';
-import pkg from '../package.json';
+import { version } from '../package.json';
 
 describe('version test', function () {
   it('getVersion return value should equal version', function () {
-    expect(getVersion()).to.equal(pkg.version);
+    expect(getVersion()).to.equal(version);
   });
 });

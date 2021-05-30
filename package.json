@@ -1,9 +1,12 @@
 {
   "name": "@ataola/utils",
-  "version": "0.1.7",
+  "version": "0.1.8",
   "description": "ataola's utils: maybe publish a feature one week, to record something i think or meet.",
-  "main": "build/utils.js",
-  "module": "build/utils.module.js",
+  "main": "dist/ataola-utils.cjs.js",
+  "module": "dist/ataola-utils.esm.js",
+  "browser": "dist/ataola-utils.umd.js",
+  "unpkg": "dist/ataola-utils.js",
+  "jsdelivr": "dist/ataola-uils.js",
   "scripts": {
     "push": "./push",
     "pull": "./pull",
@@ -17,7 +20,7 @@
     "karma:test": "karma start ./karma.conf.js",
     "format": "prettier --write '**/*.{js,jsx,ts,tsx,json,md}'",
     "build": "rollup -c",
-    "build-closure": "rollup -c && google-closure-compiler --language_in=ECMASCRIPT5_STRICT --js build/utils.js --js_output_file build/utils.min.js"
+    "dev": "rollup -c -w"
   },
   "repository": {
     "type": "git",
@@ -43,7 +46,9 @@
     "@babel/polyfill": "^7.12.1",
     "@babel/preset-env": "^7.13.15",
     "@babel/runtime": "^7.13.10",
+    "@rollup/plugin-commonjs": "^19.0.0",
     "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^13.0.0",
     "babel-eslint": "^10.1.0",
     "babel-loader": "^8.2.2",
     "babel-plugin-istanbul": "^6.0.0",
@@ -53,7 +58,6 @@
     "eslint": "^7.24.0",
     "eslint-config-prettier": "^8.1.0",
     "eslint-plugin-prettier": "^3.3.1",
-    "google-closure-compiler": "^20210505.0.0",
     "husky": "^6.0.0",
     "karma": "^6.3.2",
     "karma-chai": "^0.1.0",
@@ -66,6 +70,8 @@
     "mocha": "^8.3.2",
     "prettier": "^2.2.1",
     "rollup": "^2.50.1",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-terser": "^7.0.2",
     "webpack": "^5.31.2"
   },
   "husky": {
@@ -78,5 +84,8 @@
       "eslint . --fix",
       "prettier --config .prettierrc --write ."
     ]
-  }
+  },
+  "files": [
+    "dist"
+  ]
 }
