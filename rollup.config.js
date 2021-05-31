@@ -50,7 +50,7 @@ export default [
       { file: pkg.module, format: 'esm', banner, sourcemap: true },
       {
         name: 'ataola-utils',
-        file: 'dist/ataola-utils-amd.js',
+        file: 'dist/ataola-utils.amd.js',
         format: 'amd',
         extend: true,
         sourcemap: true,

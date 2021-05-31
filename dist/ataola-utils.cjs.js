@@ -1,5 +1,5 @@
 /*!
- * ataola-utils.js v0.1.9
+ * ataola-utils.js v0.1.10
  * (c) 2021-2021 ataola(Jiangtao Zheng)
  * Released under the MIT License.
  */
@@ -7,7 +7,7 @@
 
 Object.defineProperty(exports, '__esModule', { value: true });
 
-var version="0.1.9";
+var version="0.1.10";
 
 /**
  *
