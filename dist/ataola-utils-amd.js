@@ -1,11 +1,11 @@
 /*!
- * ataola-utils.js v0.1.8
+ * ataola-utils.js v0.1.9
  * (c) 2021-2021 ataola(Jiangtao Zheng)
  * Released under the MIT License.
  */
 define(['exports'], function (exports) { 'use strict';
 
-  var version="0.1.8";
+  var version="0.1.9";
 
   /**
    *
