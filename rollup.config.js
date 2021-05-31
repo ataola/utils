@@ -33,6 +33,13 @@ export default [
       babel({
         exclude: 'node_modules/**',
         runtimeHelpers: true,
+        presets: ['@babel/preset-env'],
+        plugins: [
+          [
+            '@babel/plugin-transform-runtime',
+            { useESModules: true /**, corejs: 3  */ },
+          ],
+        ],
       }),
     ],
   },
@@ -71,10 +78,19 @@ export default [
       json({
         compact: true,
       }),
+      resolve(),
+      commonjs(),
       babel({
         // https://github.com/rollup/rollup-plugin-babel#configuring-babel
         exclude: 'node_modules/**',
         runtimeHelpers: true,
+        presets: ['@babel/preset-env'],
+        plugins: [
+          [
+            '@babel/plugin-transform-runtime',
+            { useESModules: true /**, corejs: 3  */ },
+          ],
+        ],
       }),
     ],
   },
