@@ -98,3 +98,8 @@ console.log(getVersion());
 ### [data](./data.md)
 
 - `deepFreeze(obj)`
+
+## [八股文](./baguwen.md)
+
+- `curry(fn, ...args)`
+
