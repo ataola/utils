@@ -1,6 +1,6 @@
 {
   "name": "@ataola/utils",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "description": "ataola's utils: maybe publish a feature one week, to record something i think or meet.",
   "main": "dist/ataola-utils.cjs.js",
   "module": "dist/ataola-utils.esm.js",
