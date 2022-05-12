@@ -103,6 +103,9 @@ console.log(getVersion());
 
 - `formatMoney(num)`
 
+### [color](./color.md)
+
+- `toHEX(rgb)`
 ## [八股文](./baguwen.md)
 
 - `curry(fn, ...args)`
