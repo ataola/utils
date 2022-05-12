@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">92.68% </span>
+                <span class="strong">78.05% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>38/41</span>
+                <span class='fraction'>32/41</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">71.43% </span>
+                <span class="strong">57.14% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>20/28</span>
+                <span class='fraction'>16/28</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">100% </span>
+                <span class="strong">87.5% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>24/24</span>
+                <span class='fraction'>21/24</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">92.68% </span>
+                <span class="strong">78.05% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>38/41</span>
+                <span class='fraction'>32/41</span>
             </div>
         
             
@@ -55,7 +55,7 @@
             Press <em>n</em> or <em>j</em> to go to the next uncovered block, <em>b</em>, <em>p</em> or <em>k</em> for the previous block.
         </p>
     </div>
-    <div class='status-line high'></div>
+    <div class='status-line medium'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -546,8 +546,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -556,8 +556,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -566,8 +566,8 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -831,9 +831,9 @@ function isScreenSM() {
  * @media (min-width: 768px) and (max-width: 991.98px) { ... }
  * @returns {boolean}
  */
-function isScreenMD() {
-  const { width } = getDOMRect(document.body);
-  return width &gt;= 768 &amp;&amp; width &lt;= 991.98;
+function <span class="fstat-no" title="function not covered" >isScreenMD(</span>) {
+  const { width } = <span class="cstat-no" title="statement not covered" >getDOMRect(document.body);</span>
+<span class="cstat-no" title="statement not covered" >  return width &gt;= 768 &amp;&amp; width &lt;= 991.98;</span>
 }
 &nbsp;
 /**
@@ -841,9 +841,9 @@ function isScreenMD() {
  * @media (min-width: 992px) and (max-width: 1199.98px) { ... }
  * @returns {boolean}
  */
-function isScreenLG() {
-  const { width } = getDOMRect(document.body);
-  return width &gt;= 992 &amp;&amp; width &lt;= 1199.98;
+function <span class="fstat-no" title="function not covered" >isScreenLG(</span>) {
+  const { width } = <span class="cstat-no" title="statement not covered" >getDOMRect(document.body);</span>
+<span class="cstat-no" title="statement not covered" >  return width &gt;= 992 &amp;&amp; width &lt;= 1199.98;</span>
 }
 &nbsp;
 /**
@@ -851,9 +851,9 @@ function isScreenLG() {
  * @media (min-width: 1200px) { ... }
  * @returns {boolean}
  */
-function isScreenXL() {
-  const { width } = getDOMRect(document.body);
-  return width &gt;= 1200;
+function <span class="fstat-no" title="function not covered" >isScreenXL(</span>) {
+  const { width } = <span class="cstat-no" title="statement not covered" >getDOMRect(document.body);</span>
+<span class="cstat-no" title="statement not covered" >  return width &gt;= 1200;</span>
 }
 &nbsp;
 /**
@@ -922,7 +922,7 @@ export {
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Thu Mar 03 2022 15:41:30 GMT+0800 (China Standard Time)
+                at Thu May 12 2022 11:07:00 GMT+0800 (中国标准时间)
             </div>
         </div>
         <script src="../../prettify.js"></script>

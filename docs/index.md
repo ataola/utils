@@ -99,6 +99,10 @@ console.log(getVersion());
 
 - `deepFreeze(obj)`
 
+### [num](./num.md)
+
+- `formatMoney(num)`
+
 ## [八股文](./baguwen.md)
 
 - `curry(fn, ...args)`
