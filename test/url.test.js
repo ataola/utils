@@ -3,6 +3,7 @@ import {
   getQueryParameters,
   getQueryParameterByRegExp,
   getQueryParametersByRegExp,
+  realative2Abs,
 } from '../lib/url';
 
 describe('lib: url test', function () {

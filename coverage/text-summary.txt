@@ -1,7 +1,7 @@
 
 =============================== Coverage summary ===============================
-Statements   : 81.03% ( 94/116 )
-Branches     : 61.29% ( 57/93 )
-Functions    : 95.74% ( 45/47 )
-Lines        : 80.87% ( 93/115 )
+Statements   : Unknown% ( 0/0 )
+Branches     : Unknown% ( 0/0 )
+Functions    : Unknown% ( 0/0 )
+Lines        : Unknown% ( 0/0 )
 ================================================================================
